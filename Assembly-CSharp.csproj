@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F21AE9C7-B6CC-9BEE-057C-81FBCA79446D}</ProjectGuid>
+    <ProjectGuid>{11523212-86F3-D4D9-B8F6-C245CC85AACB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -77,31 +77,31 @@
      <Compile Include="Assets\Scripts\StaticTest.cs" />
      <Compile Include="Assets\Scripts\TreeTowerBlock.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>E:/John Stuff 2020/Unity Projects/Programming Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>E:/John Stuff 2020/Unity Projects/ProgrammingProject2020/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>E:/John Stuff 2020/Unity Projects/Programming Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>E:/John Stuff 2020/Unity Projects/ProgrammingProject2020/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>E:/John Stuff 2020/Unity Projects/Programming Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>E:/John Stuff 2020/Unity Projects/ProgrammingProject2020/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/John Stuff 2020/Unity Projects/Programming Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/John Stuff 2020/Unity Projects/ProgrammingProject2020/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>E:/John Stuff 2020/Unity Projects/Programming Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>E:/John Stuff 2020/Unity Projects/ProgrammingProject2020/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>E:/John Stuff 2020/Unity Projects/Programming Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>E:/John Stuff 2020/Unity Projects/ProgrammingProject2020/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>E:/John Stuff 2020/Unity Projects/Programming Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>E:/John Stuff 2020/Unity Projects/ProgrammingProject2020/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>E:/John Stuff 2020/Unity Projects/Programming Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>E:/John Stuff 2020/Unity Projects/ProgrammingProject2020/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>E:/John Stuff 2020/Unity Projects/Programming Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>E:/John Stuff 2020/Unity Projects/ProgrammingProject2020/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
