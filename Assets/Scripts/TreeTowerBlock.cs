@@ -56,7 +56,7 @@ namespace GRIDCITY
             int y = Mathf.RoundToInt(transform.position.y);
             int z = Mathf.RoundToInt(transform.position.z + 7.0f);
             cityManager = CityManager.Instance;
-            treePrefab = cityManager.treePrefab;
+            //treePrefab = cityManager.treePrefab;
             GameObject child;
             if (recursionLevel == 0)                     //initial foundation block
             {

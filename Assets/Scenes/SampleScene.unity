@@ -420,20 +420,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meshArray:
-  - {fileID: 3673722810935237965, guid: dec227063eb67d54caab070144b25f40, type: 3}
   - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
-  - {fileID: -5387877993904369314, guid: 9fda6effed1fea5448deae7ac8a74fcc, type: 3}
-  - {fileID: -5387877993904369314, guid: 9fda6effed1fea5448deae7ac8a74fcc, type: 3}
   - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
-  - {fileID: 3673722810935237965, guid: dec227063eb67d54caab070144b25f40, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   materialArray:
   - {fileID: 2100000, guid: b3ff32b067d3fce4891605dc16b0dad9, type: 2}
-  - {fileID: 2100000, guid: 4e3a92a00f18a9544a918a365c9e6aaf, type: 2}
-  - {fileID: 2100000, guid: 70d6b90e9bd3df04e87d3a3e45bde521, type: 2}
-  - {fileID: 2100000, guid: 5dd8d10c70333d44ead5758b8ddc18ed, type: 2}
+  - {fileID: 2100000, guid: b3ff32b067d3fce4891605dc16b0dad9, type: 2}
+  - {fileID: 2100000, guid: b3ff32b067d3fce4891605dc16b0dad9, type: 2}
+  - {fileID: 2100000, guid: b3ff32b067d3fce4891605dc16b0dad9, type: 2}
   buildingPrefab: {fileID: 629187099214970120, guid: e5a448e8dda1a6b4aaa8891df425fe8c,
     type: 3}
   treePrefab: {fileID: 629187099214970120, guid: e156f579bab28b743b8e4643bfb78785,

@@ -14,7 +14,6 @@ namespace GRIDCITY
         public Mesh[] meshArray;
         public Material[] materialArray;
         public GameObject buildingPrefab;
-        public GameObject treePrefab;
         public BuildingProfile[] profileArray;
 
         public BuildingProfile wallProfile;

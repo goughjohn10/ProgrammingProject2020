@@ -15,15 +15,15 @@ MonoBehaviour:
   groundBlocks:
   - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   mainBlocks:
-  - {fileID: -5387877993904369314, guid: 9fda6effed1fea5448deae7ac8a74fcc, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   altBlocks:
-  - {fileID: 3673722810935237965, guid: dec227063eb67d54caab070144b25f40, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   roofBlocks:
   - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   groundMaterials:
-  - {fileID: 2100000, guid: b3ff32b067d3fce4891605dc16b0dad9, type: 2}
+  - {fileID: 2100000, guid: f12f56b2f9033204d9962dbf2f8b569d, type: 2}
   mainMaterials:
-  - {fileID: 2100000, guid: b3ff32b067d3fce4891605dc16b0dad9, type: 2}
+  - {fileID: 2100000, guid: f12f56b2f9033204d9962dbf2f8b569d, type: 2}
   roofMaterials:
-  - {fileID: 2100000, guid: b3ff32b067d3fce4891605dc16b0dad9, type: 2}
+  - {fileID: 2100000, guid: f12f56b2f9033204d9962dbf2f8b569d, type: 2}
   maxHeight: 5

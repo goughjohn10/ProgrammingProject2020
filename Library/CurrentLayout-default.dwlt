@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 34
+  controlID: 97
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 35
+  controlID: 98
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 36
+  controlID: 99
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -393,8 +393,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
+      m_SelectedIDs: ae330000
+      m_LastClickedID: 13230
       m_ExpandedIDs: 6efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -503,13 +503,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.21898231, y: 0.61577785, z: -0.18362194, w: 0.7343218}
+    m_Target: {x: 0.4195871, y: 0.054710384, z: -0.025315238, w: 0.9057659}
     speed: 2
-    m_Value: {x: 0.21897343, y: 0.6157529, z: -0.1836145, w: 0.73429203}
+    m_Value: {x: 0.4195663, y: 0.054707672, z: -0.025313983, w: 0.90572095}
   m_Size:
-    m_Target: 36.026775
+    m_Target: 20.847591
     speed: 2
-    m_Value: 36.026775
+    m_Value: 20.847591
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -573,19 +573,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\John Stuff 2020\Unity Projects\ProgrammingProject2020
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 32340000
-    m_LastClickedID: 13362
+    m_SelectedIDs: 44340000
+    m_LastClickedID: 13380
     m_ExpandedIDs: 000000003234000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -724,7 +724,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 13238
+  m_LastSelectedObjectID: 13230
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52

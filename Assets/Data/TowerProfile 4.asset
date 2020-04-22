@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: TowerProfile 4
   m_EditorClassIdentifier: 
   groundBlocks:
-  - {fileID: -5387877993904369314, guid: 9fda6effed1fea5448deae7ac8a74fcc, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   mainBlocks: []
   altBlocks:
   - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   roofBlocks: []
   groundMaterials:
-  - {fileID: 2100000, guid: 0f5edd0fb86a5524aae09d30d8003d2d, type: 2}
+  - {fileID: 2100000, guid: 75ebdb969e25da34eb07826247e18555, type: 2}
   mainMaterials:
-  - {fileID: 2100000, guid: 0f5edd0fb86a5524aae09d30d8003d2d, type: 2}
+  - {fileID: 2100000, guid: 75ebdb969e25da34eb07826247e18555, type: 2}
   roofMaterials:
-  - {fileID: 2100000, guid: 0f5edd0fb86a5524aae09d30d8003d2d, type: 2}
+  - {fileID: 2100000, guid: 75ebdb969e25da34eb07826247e18555, type: 2}
   maxHeight: 5
