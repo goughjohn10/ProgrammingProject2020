@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90ee27a564a09b4c908d2c364faa5cb, type: 3}
+  m_Name: TowerProfile 1
+  m_EditorClassIdentifier: 
+  groundBlocks:
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
+  mainBlocks:
+  - {fileID: -5387877993904369314, guid: 9fda6effed1fea5448deae7ac8a74fcc, type: 3}
+  altBlocks:
+  - {fileID: 3673722810935237965, guid: dec227063eb67d54caab070144b25f40, type: 3}
+  roofBlocks:
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
+  groundMaterials:
+  - {fileID: 2100000, guid: b3ff32b067d3fce4891605dc16b0dad9, type: 2}
+  mainMaterials:
+  - {fileID: 2100000, guid: b3ff32b067d3fce4891605dc16b0dad9, type: 2}
+  roofMaterials:
+  - {fileID: 2100000, guid: b3ff32b067d3fce4891605dc16b0dad9, type: 2}
+  maxHeight: 5
