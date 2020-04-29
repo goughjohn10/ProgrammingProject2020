@@ -13,8 +13,6 @@
           <e p="DestroyFallen.cs" t="Include" />
           <e p="ExampleScriptableObject.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
-          <e p="HostileCityManager.cs" t="Include" />
-          <e p="HostileTowerBlock.cs" t="Include" />
           <e p="LookAtTarget.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="RecursiveTowerBlock.cs" t="Include" />
@@ -23,8 +21,6 @@
           <e p="SimplePhysicsController.cs" t="Include" />
           <e p="SpaceGrid.cs" t="Include" />
           <e p="Spawn.cs" t="Include" />
-          <e p="StaticTest.cs" t="Include" />
-          <e p="TreeTowerBlock.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

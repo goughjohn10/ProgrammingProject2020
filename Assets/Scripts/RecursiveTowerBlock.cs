@@ -43,8 +43,8 @@ namespace GRIDCITY
         {
             cityManager = CityManager.Instance;
 
-            myMeshFilter.mesh = cityManager.meshArray[(int)myType];
-            myRenderer.material = cityManager.materialArray[myMaterial];
+            //myMeshFilter.mesh = cityManager.meshArray[(int)myType];
+            //myRenderer.material = cityManager.materialArray[myMaterial];
             if (recursionLevel < maxLevel)
             {
                 Transform child = Instantiate(basePrefab,transform.position+Vector3.up,Quaternion.identity,this.transform);

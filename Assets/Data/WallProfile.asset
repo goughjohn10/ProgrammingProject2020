@@ -20,9 +20,9 @@ MonoBehaviour:
   roofBlocks:
   - {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
   groundMaterials:
-  - {fileID: 2100000, guid: 70d6b90e9bd3df04e87d3a3e45bde521, type: 2}
+  - {fileID: 2100000, guid: acb23bffac3cff04193f6eabf5ba41ee, type: 2}
   mainMaterials:
-  - {fileID: 2100000, guid: 70d6b90e9bd3df04e87d3a3e45bde521, type: 2}
+  - {fileID: 2100000, guid: 3e6e6c10544e77e40911224d4e09d5ac, type: 2}
   roofMaterials:
-  - {fileID: 2100000, guid: 70d6b90e9bd3df04e87d3a3e45bde521, type: 2}
+  - {fileID: 2100000, guid: acb23bffac3cff04193f6eabf5ba41ee, type: 2}
   maxHeight: 5

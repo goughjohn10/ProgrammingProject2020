@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: TowerProfile 2
   m_EditorClassIdentifier: 
   groundBlocks:
-  - {fileID: 3673722810935237965, guid: dec227063eb67d54caab070144b25f40, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   mainBlocks:
-  - {fileID: 3673722810935237965, guid: dec227063eb67d54caab070144b25f40, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   altBlocks:
-  - {fileID: 3673722810935237965, guid: dec227063eb67d54caab070144b25f40, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   roofBlocks:
-  - {fileID: 3673722810935237965, guid: dec227063eb67d54caab070144b25f40, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   groundMaterials:
-  - {fileID: 2100000, guid: 70d6b90e9bd3df04e87d3a3e45bde521, type: 2}
+  - {fileID: 2100000, guid: 3e6e6c10544e77e40911224d4e09d5ac, type: 2}
   mainMaterials:
-  - {fileID: 2100000, guid: 70d6b90e9bd3df04e87d3a3e45bde521, type: 2}
+  - {fileID: 2100000, guid: 3e6e6c10544e77e40911224d4e09d5ac, type: 2}
   roofMaterials:
-  - {fileID: 2100000, guid: 70d6b90e9bd3df04e87d3a3e45bde521, type: 2}
-  maxHeight: 5
+  - {fileID: 2100000, guid: 3e6e6c10544e77e40911224d4e09d5ac, type: 2}
+  maxHeight: 3

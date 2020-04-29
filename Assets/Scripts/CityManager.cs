@@ -11,14 +11,14 @@ namespace GRIDCITY
 
         #region Fields
         private static CityManager _instance;
-        public Mesh[] meshArray;
-        public Material[] materialArray;
+        // public Mesh[] meshArray;
+       // public Material[] materialArray;
         public GameObject buildingPrefab;
         public BuildingProfile[] profileArray;
 
         public BuildingProfile wallProfile;
 
-        private bool[,,] cityArray = new bool [15,15,15];   //increased array size to allow for larger city volume
+        private bool[,,] cityArray = new bool [50,50,50];   //increased array size to allow for larger city volume
 
         public static CityManager Instance
         {
@@ -35,7 +35,7 @@ namespace GRIDCITY
         #region Methods
         #region Unity Methods
 
-        // Use this for internal initialization
+        
         void Awake () {
             if (_instance == null)
             {
@@ -48,43 +48,57 @@ namespace GRIDCITY
                 Debug.LogError("Multiple CityManager instances in Scene. Destroying clone!");
             };
         }
-		
+
+        private void InstantiateDeluxeTower(int x, int z, int profileArrayIndex)
+        {
+            var position = new Vector3(x, 0.00f, z);
+            Instantiate(buildingPrefab, position, Quaternion.identity).GetComponent<DeluxeTowerBlock>().SetProfile(profileArray[profileArrayIndex]);
+        }
 		// Use this for external initialization
 		void Start ()
         {
-            //UPDATING PLANNING ARRAY TO ACCOUNT FOR MANUALLY PLACED|CITY GATE
-            for (int ix=-1; ix <2; ix++)
+            //Centre of map empty.
+            for (int ix=4; ix <7; ix++)
             {
-                int iz = -7;
-                for (int iy=0;iy<3;iy++)
+                for (int iz = 4; iz < 7; iz++)
                 {
-                    SetSlot(ix + 7, iy, iz + 7, true);
+                    for (int iy = 0; iy < 3; iy++)
+                    {
+                        SetSlot(ix + 7, iy, iz + 7, true);
+                    }
                 }
             }
 
-            //BUILD CITY WALLS - add your code below
-            
-            for (int i=-7 ; i < 8 ; i += 14)
+            //City Walls
+            for (int i=-7 ; i < 18 ; i += 24)
             {
-                for (int j = -7; j < 8; j += 1)
+                for (int j = -7; j < 18; j += 1)
                 {
-                    Instantiate(buildingPrefab, new Vector3(i, 0.05f, j), Quaternion.identity).GetComponent<DeluxeTowerBlock>().SetProfile(wallProfile);
+                    Instantiate(buildingPrefab, new Vector3(i, 0.0f, j), Quaternion.identity).GetComponent<DeluxeTowerBlock>().SetProfile(wallProfile);
                 }
-                for (int j = -6; j < 7; j += 1)
+                for (int j = -6; j < 17; j += 1)
                 {
-                    Instantiate(buildingPrefab, new Vector3(j, 0.05f, i), Quaternion.identity).GetComponent<DeluxeTowerBlock>().SetProfile(wallProfile);
+                    Instantiate(buildingPrefab, new Vector3(j, 0.0f, i), Quaternion.identity).GetComponent<DeluxeTowerBlock>().SetProfile(wallProfile);
                 }
             }
             
-
-            //CITY BUILDINGS:
             
-			for (int i=-4;i<5;i+=2)
+
+            //Buildings
+            for (int i=-20;i<20;i+=5)
             {
-                for (int j=-4;j<5;j+=2)
+                for (int j=-20;j<20;j+=5)
                 {
                     int random = Random.Range(0, profileArray.Length);
-                    Instantiate(buildingPrefab, new Vector3(i, 0.05f, j), Quaternion.identity).GetComponent<DeluxeTowerBlock>().SetProfile(profileArray[random]);                 
+                    for (int x = i - 1; x < i + 3; x++)
+                    {
+                        for (int z = j - 1; z < j + 3; z++)
+                        {
+                            InstantiateDeluxeTower(x, z, random);
+                        }
+                        
+                    }
+                   
                 }
             }
             
@@ -95,7 +109,7 @@ namespace GRIDCITY
 
         public bool CheckSlot(int x, int y, int z)
         {
-            if (x < 0 || x > 14 || y < 0 || y > 14 || z < 0 || z > 14) return true;
+            if (x < 0 || x > 25 || y < 0 || y > 25 || z < 0 || z > 25) return true;
             else
             {
                 return cityArray[x, y, z];
@@ -105,7 +119,7 @@ namespace GRIDCITY
 
         public void SetSlot(int x, int y, int z, bool occupied)
         {
-            if (!(x < 0 || x > 14 || y < 0 || y > 14 || z < 0 || z > 14))
+            if (!(x < 0 || x > 25 || y < 0 || y > 25 || z < 0 || z > 25))
             {
                 cityArray[x, y, z] = occupied;
             }

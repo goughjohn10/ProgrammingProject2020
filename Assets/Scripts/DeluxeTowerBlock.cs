@@ -109,10 +109,10 @@ namespace GRIDCITY
         // Update is called once per frame
         void Update()
         {
-            if (transform.position.y < -5f)
+            /*if (transform.position.y < -5f)
             {
                 Destroy(gameObject);
-            }
+            }*/
         }
 
         #endregion

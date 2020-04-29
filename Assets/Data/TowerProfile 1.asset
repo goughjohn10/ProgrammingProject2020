@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundBlocks:
   - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   mainBlocks:
   - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   altBlocks:
@@ -21,9 +23,9 @@ MonoBehaviour:
   roofBlocks:
   - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   groundMaterials:
-  - {fileID: 2100000, guid: f12f56b2f9033204d9962dbf2f8b569d, type: 2}
+  - {fileID: 2100000, guid: ff04eaef2bf4b0e4da1337e723325022, type: 2}
   mainMaterials:
-  - {fileID: 2100000, guid: f12f56b2f9033204d9962dbf2f8b569d, type: 2}
+  - {fileID: 2100000, guid: ff04eaef2bf4b0e4da1337e723325022, type: 2}
   roofMaterials:
-  - {fileID: 2100000, guid: f12f56b2f9033204d9962dbf2f8b569d, type: 2}
-  maxHeight: 5
+  - {fileID: 2100000, guid: ff04eaef2bf4b0e4da1337e723325022, type: 2}
+  maxHeight: 2
