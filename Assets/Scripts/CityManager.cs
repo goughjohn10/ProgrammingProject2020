@@ -70,13 +70,13 @@ namespace GRIDCITY
             }
 
             //City Walls
-            for (int i=-7 ; i < 18 ; i += 24)
+            for (int i=-7 ; i < 17 ; i += 23)
             {
-                for (int j = -7; j < 18; j += 1)
+                for (int j = -7; j < 17; j += 1)
                 {
                     Instantiate(buildingPrefab, new Vector3(i, 0.0f, j), Quaternion.identity).GetComponent<DeluxeTowerBlock>().SetProfile(wallProfile);
                 }
-                for (int j = -6; j < 17; j += 1)
+                for (int j = -6; j < 16; j += 1)
                 {
                     Instantiate(buildingPrefab, new Vector3(j, 0.0f, i), Quaternion.identity).GetComponent<DeluxeTowerBlock>().SetProfile(wallProfile);
                 }
@@ -90,9 +90,9 @@ namespace GRIDCITY
                 for (int j=-20;j<20;j+=5)
                 {
                     int random = Random.Range(0, profileArray.Length);
-                    for (int x = i - 1; x < i + 3; x++)
+                    for (int x = i - 1; x < i + 1; x++)
                     {
-                        for (int z = j - 1; z < j + 3; z++)
+                        for (int z = j - 1; z < j + 1; z++)
                         {
                             InstantiateDeluxeTower(x, z, random);
                         }

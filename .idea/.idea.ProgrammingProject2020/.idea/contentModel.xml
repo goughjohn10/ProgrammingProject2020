@@ -10,10 +10,8 @@
           <e p="BuildingProfile.cs" t="Include" />
           <e p="CityManager.cs" t="Include" />
           <e p="DeluxeTowerBlock.cs" t="Include" />
-          <e p="DestroyFallen.cs" t="Include" />
           <e p="ExampleScriptableObject.cs" t="Include" />
-          <e p="GameController.cs" t="Include" />
-          <e p="LookAtTarget.cs" t="Include" />
+          <e p="FollowCamera.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="RecursiveTowerBlock.cs" t="Include" />
           <e p="SimpleCameraFollow.cs" t="Include" />
@@ -21,6 +19,16 @@
           <e p="SimplePhysicsController.cs" t="Include" />
           <e p="SpaceGrid.cs" t="Include" />
           <e p="Spawn.cs" t="Include" />
+        </e>
+        <e p="Supercyan Character Pack Free Sample" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="CameraLogicFree.cs" t="Include" />
+            <e p="DemoFree.cs" t="Include" />
+            <e p="SimpleCharacterControlFree.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="FreeCelShader.shader" t="Include" />
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
