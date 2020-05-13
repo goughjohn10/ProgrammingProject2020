@@ -52,6 +52,7 @@ public class SimpleCharacterControlFree : MonoBehaviour
     {
         if(!m_animator) { gameObject.GetComponent<Animator>(); }
         if(!m_rigidBody) { gameObject.GetComponent<Animator>(); }
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -109,6 +110,7 @@ public class SimpleCharacterControlFree : MonoBehaviour
 
 	void FixedUpdate ()
     {
+
         m_animator.SetBool("Grounded", m_isGrounded);
 
         switch(m_controlMode)

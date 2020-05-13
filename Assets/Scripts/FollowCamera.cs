@@ -8,7 +8,9 @@ public class FollowCamera : MonoBehaviour {
 	private Vector3 offset;
 	
      
-	void Start() {
+	void Start()
+	{
+		//Cursor.lockState = CursorLockMode.Locked;
 		offset = target.transform.position - transform.position;
 	}
      
@@ -18,7 +20,7 @@ public class FollowCamera : MonoBehaviour {
 		float angle = Mathf.LerpAngle(currentAngle, desiredAngle, Time.deltaTime * damping);
          
 		Quaternion rotation = Quaternion.Euler(0, angle, 0);
-		transform.position = target.transform.position - /*(rotation **/ offset;
+		transform.position = target.transform.position - rotation * offset;
 
 		//transform.LookAt(target.transform); //disabled this line to jimmy rig the camerarotationa
 	}

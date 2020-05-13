@@ -6,6 +6,11 @@
     <e p="E:\John Stuff 2020\Unity Projects\ProgrammingProject2020" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="BrokenVector" t="Include">
+          <e p="LowPolyTreePack" t="Include">
+            <e p="README.txt" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="BuildingProfile.cs" t="Include" />
           <e p="CityManager.cs" t="Include" />
@@ -14,11 +19,17 @@
           <e p="FollowCamera.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="RecursiveTowerBlock.cs" t="Include" />
+          <e p="RoadGenerator.cs" t="Include" />
+          <e p="RoadLayout.cs" t="Include" />
           <e p="SimpleCameraFollow.cs" t="Include" />
           <e p="SimpleController.cs" t="Include" />
           <e p="SimplePhysicsController.cs" t="Include" />
           <e p="SpaceGrid.cs" t="Include" />
           <e p="Spawn.cs" t="Include" />
+          <e p="TreeRecursion.cs" t="Include" />
+          <e p="TreeRecursionController.cs" t="Include" />
+          <e p="TreeRecursionRotation.cs" t="Include" />
+          <e p="TreeRecursionScale.cs" t="Include" />
         </e>
         <e p="Supercyan Character Pack Free Sample" t="Include">
           <e p="Scripts" t="Include">
