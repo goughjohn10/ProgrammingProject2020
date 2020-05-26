@@ -17,6 +17,7 @@ namespace GRIDCITY
         private MeshFilter myMeshFilter;
         private Mesh myMesh;
         private Material myMaterial;
+        private Collider myCollider;
         #endregion
 
         #region Properties	
@@ -36,7 +37,6 @@ namespace GRIDCITY
             myMesh = mesh;
             myMaterial = mat;
             maxLevel = myProfile.maxHeight;
-            
         }
 
         #region Unity Methods
@@ -58,6 +58,7 @@ namespace GRIDCITY
             cityManager = CityManager.Instance;
 
             Transform child;
+            
             if (recursionLevel == 0)
             {
                 if (!cityManager.CheckSlot(x, y, z))

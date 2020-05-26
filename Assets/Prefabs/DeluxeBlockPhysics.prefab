@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 1191066148484237780}
   - component: {fileID: 4167621631459245296}
   - component: {fileID: 9176510953282187120}
-  - component: {fileID: -6376633983818362512}
+  - component: {fileID: -3697622695074865826}
+  - component: {fileID: -3398415348110202578}
   m_Layer: 0
   m_Name: DeluxeBlockPhysics
   m_TagString: Untagged
@@ -111,19 +112,32 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!64 &-6376633983818362512
+  m_Constraints: 14
+  m_CollisionDetection: 3
+--- !u!65 &-3697622695074865826
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629187099214970120}
+  m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3.6070871, z: 1}
+  m_Center: {x: 0, y: 1.8035436, z: 0}
+--- !u!64 &-3398415348110202578
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629187099214970120}
-  m_Material: {fileID: 13400000, guid: 974f1667175905443a8db21c81fa9df5, type: 2}
+  m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
+  m_Convex: 0
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 3673722810935237965, guid: dec227063eb67d54caab070144b25f40, type: 3}

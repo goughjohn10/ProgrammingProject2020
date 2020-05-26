@@ -16,6 +16,8 @@ MonoBehaviour:
   - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   mainBlocks:
   - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
+  - {fileID: -5387877993904369314, guid: 9fda6effed1fea5448deae7ac8a74fcc, type: 3}
+  - {fileID: 1846653201744175015, guid: 0fd12125b2b853b4a8fd4478448858ce, type: 3}
   altBlocks: []
   roofBlocks:
   - {fileID: 8364062792205436496, guid: 0f23ad163fbf6614b9c64fc530919569, type: 3}
