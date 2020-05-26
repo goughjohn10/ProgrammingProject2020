@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
 
     private Vector3 spawnPointOne;
     
-    public static float enemyCount = 5;
+    public static float enemyCount = 10;
     
     private float[] spawnLocs = new float[] {1.5f, 7.5f};
     // Start is called before the first frame update

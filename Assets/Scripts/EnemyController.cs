@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
+
 public class EnemyController : MonoBehaviour
 {
     public float lookRadius = 10f;
@@ -14,6 +16,10 @@ public class EnemyController : MonoBehaviour
     public float speed = 0.4f;
 
     public Animation deathFlash;
+    
+    public GameObject sparksTwo;
+
+    public Animation enemyDeath;
     void Start()
     {
         target = PlayerManager.instance.player.transform;
@@ -30,8 +36,7 @@ public class EnemyController : MonoBehaviour
             agent.SetDestination(target.position);
             FaceTarget();
         }
-        //transform.LookAt(target);
-       // transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        Debug.Log(EnemySpawner.enemyCount);
     }
 
     void FaceTarget()
@@ -53,7 +58,8 @@ public class EnemyController : MonoBehaviour
         if (other.transform.CompareTag("Sword") && SwordSwing.isSwinging == true)
         {
             EnemySpawner.enemyCount -= 1;
-            Destroy(this.gameObject);
+            sparksTwo.SetActive(true);
+            StartCoroutine(EnemyDeath());
         }
         
         if (other.transform.CompareTag("Player"))
@@ -74,8 +80,13 @@ public class EnemyController : MonoBehaviour
     IEnumerator KillPlayer()
     {
         //PLAY SOUND
-        yield return new WaitForSeconds(2);
-        var player = GameObject.Find("Player");
-        Destroy(player);
+        yield return new WaitForSeconds(2); //instead of health
+        SceneManager.LoadScene("DeathScreen");
+    }
+
+    IEnumerator EnemyDeath()
+    {
+        yield return new WaitForSeconds(0.2f);
+        Destroy(this.gameObject);
     }
 }

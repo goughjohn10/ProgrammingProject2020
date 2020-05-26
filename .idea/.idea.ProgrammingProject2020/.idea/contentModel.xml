@@ -12,6 +12,13 @@
             <e p="README.txt" t="Include" />
           </e>
         </e>
+        <e p="deathDirector.cs" t="Include" />
+        <e p="FullTiltBoogie" t="Include">
+          <e p="Helpers" t="Include">
+            <e p="README.txt" t="Include" />
+          </e>
+          <e p="RotateFlareHolder.cs" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="BuildingProfile.cs" t="Include" />
           <e p="CityManager.cs" t="Include" />
@@ -19,6 +26,7 @@
           <e p="EnemyController.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
           <e p="ExampleScriptableObject.cs" t="Include" />
+          <e p="IntroDirector.cs" t="Include" />
           <e p="mouseLook.cs" t="Include" />
           <e p="PlayerManager.cs" t="Include" />
           <e p="playerMovement.cs" t="Include" />

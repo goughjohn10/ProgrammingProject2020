@@ -37,7 +37,7 @@ public class RoadLayout : MonoBehaviour
                 offset = new Vector3(10, 0, 0);
                 Instantiate(roadNoTrees, sidePosition + offset, Quaternion.Euler(0,90,0));
                 
-                sidePosition = new Vector3(-.6f, 0.01f, 2f);
+               /* sidePosition = new Vector3(-.6f, 0.01f, 2f);
                 Instantiate(roadNoTrees, sidePosition, Quaternion.Euler(0,90,0));
                 Instantiate(roadNoTrees, sidePosition + offset, Quaternion.Euler(0,90,0)); 
                 sidePosition = new Vector3(-.6f, 0.01f, 7f);
@@ -45,7 +45,7 @@ public class RoadLayout : MonoBehaviour
                 Instantiate(roadNoTrees, sidePosition + offset, Quaternion.Euler(0,90,0)); 
                 sidePosition = new Vector3(-.6f, 0.01f, 12f); 
                 Instantiate(roadNoTrees, sidePosition, Quaternion.Euler(0,90,0));
-                Instantiate(roadNoTrees, sidePosition + offset, Quaternion.Euler(0,90,0));
+                Instantiate(roadNoTrees, sidePosition + offset, Quaternion.Euler(0,90,0)); */ 
 
             }
         }
