@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PyramidFractal : MonoBehaviour
 {
@@ -15,12 +16,21 @@ public class PyramidFractal : MonoBehaviour
     public float newScale;
 
     public GameObject topMount;
+
+    public static bool leftScene;
     
     // Start is called before the first frame update
     void Start()
     {
         gameObject.AddComponent<MeshFilter>().mesh = mesh;
         gameObject.AddComponent<MeshRenderer>().material = material;
+        if (leftScene)
+        {
+            Time.timeScale = 0.1f;
+            maxDepth = 3;
+            newScale = 0.8f;
+            StartCoroutine(ExplodeAndLeave());
+        }
         if (depth < maxDepth)
         {
             new GameObject("PyramidChild").AddComponent<PyramidFractal>().Initialize(this, Vector3.up, Quaternion.identity);
@@ -47,7 +57,17 @@ public class PyramidFractal : MonoBehaviour
         this.gameObject.AddComponent<Rigidbody>();
         this.gameObject.AddComponent<BoxCollider>();
         var rb = GetComponent<Rigidbody>();
-        rb.isKinematic = true;
+        if (leftScene)
+        {
+            rb.isKinematic = false;
+            rb.useGravity = false;
+
+        }
+        else
+        {
+            rb.isKinematic = true;
+            rb.useGravity = true;
+        }
         this.gameObject.layer = (8); //layer 8 is the ground
     }
 
@@ -55,5 +75,13 @@ public class PyramidFractal : MonoBehaviour
     void Update()
     {
         
+    }
+
+    IEnumerator ExplodeAndLeave()
+    {
+        yield return new WaitForSeconds(0.2f);
+        Time.timeScale = 1;
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("WinScreen");
     }
 }

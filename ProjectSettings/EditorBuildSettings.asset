@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
     guid: 2167c6730daf7b240aa8f9d96d40e460
+  - enabled: 1
+    path: Assets/Scenes/PyramidExplode.unity
+    guid: 0ec62e6c97d67c94e90bcf3994075f25
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: ec91b3b645acd0a4b94b3c7716689725
+  - enabled: 1
+    path: Assets/Scenes/Brief.unity
+    guid: 79a7c0c698a6ed048b63e3301f7cedc3
   m_configObjects: {}

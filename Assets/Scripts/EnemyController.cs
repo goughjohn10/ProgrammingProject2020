@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class EnemyController : MonoBehaviour
 {
     public float lookRadius = 10f;
+    public float health = 10;
 
     private Transform target;
 
@@ -15,11 +16,10 @@ public class EnemyController : MonoBehaviour
 
     public float speed = 0.4f;
 
-    public Animation deathFlash;
+    public AudioSource zombie;
+    public AudioClip attackSound;
     
-    public GameObject sparksTwo;
-
-    public Animation enemyDeath;
+    
     void Start()
     {
         target = PlayerManager.instance.player.transform;
@@ -36,7 +36,12 @@ public class EnemyController : MonoBehaviour
             agent.SetDestination(target.position);
             FaceTarget();
         }
-        Debug.Log(EnemySpawner.enemyCount);
+        else
+        {
+            agent.SetDestination(transform.position);
+        }
+        
+        // Debug.Log(EnemySpawner.enemyCount);
     }
 
     void FaceTarget()
@@ -57,16 +62,23 @@ public class EnemyController : MonoBehaviour
     {
         if (other.transform.CompareTag("Sword") && SwordSwing.isSwinging == true)
         {
-            EnemySpawner.enemyCount -= 1;
-            sparksTwo.SetActive(true);
-            StartCoroutine(EnemyDeath());
+            StartCoroutine(EnemyDeath(10f));
         }
         
         if (other.transform.CompareTag("Player"))
         {
+            zombie.PlayOneShot(attackSound);
             StartCoroutine(KillPlayer());
         }
         else
+        {
+            StopCoroutine(KillPlayer());
+        }
+    }
+
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.transform.CompareTag("Player"))
         {
             StopCoroutine(KillPlayer());
         }
@@ -80,13 +92,24 @@ public class EnemyController : MonoBehaviour
     IEnumerator KillPlayer()
     {
         //PLAY SOUND
-        yield return new WaitForSeconds(2); //instead of health
+        yield return new WaitForSeconds(0.5f); //instead of health
         SceneManager.LoadScene("DeathScreen");
     }
 
-    IEnumerator EnemyDeath()
+    public IEnumerator EnemyDeath(float amount)
     {
-        yield return new WaitForSeconds(0.2f);
-        Destroy(this.gameObject);
+        health -= amount;
+        if (health <= 0)
+        { 
+            yield return new WaitForSeconds(0.5f);
+            Destroy(this.gameObject);
+            EnemySpawner.enemyCount -= 1;
+        }
     }
+
+    public void TakeDamage() //public enemy death
+    {
+        StartCoroutine(EnemyDeath(10));
+    }
+    
 }

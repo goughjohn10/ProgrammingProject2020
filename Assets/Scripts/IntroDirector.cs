@@ -7,6 +7,11 @@ public class IntroDirector : MonoBehaviour
 {
     public void StartGame()
     {
+        SceneManager.LoadScene("Brief");
+    }
+
+    public void Continue()
+    {
         SceneManager.LoadScene("City");
     }
 }

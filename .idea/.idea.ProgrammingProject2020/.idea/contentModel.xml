@@ -12,34 +12,61 @@
             <e p="README.txt" t="Include" />
           </e>
         </e>
-        <e p="deathDirector.cs" t="Include" />
+        <e p="FreeMachineGun" t="Include">
+          <e p="documentation.txt" t="Include" />
+          <e p="Shader" t="Include">
+            <e p="BDCS.shader" t="Include" />
+          </e>
+        </e>
         <e p="FullTiltBoogie" t="Include">
           <e p="Helpers" t="Include">
             <e p="README.txt" t="Include" />
           </e>
           <e p="RotateFlareHolder.cs" t="Include" />
         </e>
+        <e p="RiftFX Barriers" t="Include">
+          <e p="README.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="FaceMainCameraScript.cs" t="Include" />
+            <e p="ScalePulseScript.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="BarrierShader.shader" t="Include" />
+            <e p="BarrierWallShader.shader" t="Include" />
+            <e p="CylinderBarrierShader.shader" t="Include" />
+            <e p="FragmentShaders.cginc" t="Include" />
+            <e p="VertexDefinitions.cginc" t="Include" />
+            <e p="VertexShaders.cginc" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="BuildingProfile.cs" t="Include" />
           <e p="CityManager.cs" t="Include" />
+          <e p="deathDirector.cs" t="Include" />
           <e p="DeluxeTowerBlock.cs" t="Include" />
           <e p="EnemyController.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
           <e p="ExampleScriptableObject.cs" t="Include" />
+          <e p="Goal.cs" t="Include" />
+          <e p="Gun.cs" t="Include" />
+          <e p="gunTarget.cs" t="Include" />
           <e p="IntroDirector.cs" t="Include" />
           <e p="mouseLook.cs" t="Include" />
+          <e p="Music.cs" t="Include" />
           <e p="PlayerManager.cs" t="Include" />
           <e p="playerMovement.cs" t="Include" />
           <e p="PyramidFractal.cs" t="Include" />
           <e p="RecursiveTowerBlock.cs" t="Include" />
           <e p="RoadGenerator.cs" t="Include" />
           <e p="RoadLayout.cs" t="Include" />
+          <e p="ScoringSystem.cs" t="Include" />
           <e p="SpaceGrid.cs" t="Include" />
           <e p="SwordSwing.cs" t="Include" />
           <e p="TreeRecursion.cs" t="Include" />
           <e p="TreeRecursionController.cs" t="Include" />
           <e p="TreeRecursionRotation.cs" t="Include" />
           <e p="TreeRecursionScale.cs" t="Include" />
+          <e p="Water.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="Environment" t="Include">
