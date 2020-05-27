@@ -7,17 +7,33 @@ using UnityEngine.UI;
 
 public class ScoringSystem : MonoBehaviour
 {
+    #region Fields
+
     public GameObject scoreText;
     public int theScore;
     public AudioSource collectSound;
-
     public Vector3[] collectablePoints;
     private bool loopRestart;
-    public static bool hasCollected;
-
+    public static bool hasCollected = false;
     public GameObject finishLine;
+    public GameObject collectedText;
+    public Animation collectedTextAnim;
+    public GameObject beginText;
+
+    #endregion
+    
+    #region Methods
+
     private void Start()
+        {
+            StartCoroutine(StartInstructs());
+        }
+    
+    private IEnumerator StartInstructs()
     {
+        beginText.GetComponent<Text>().text = "Walk into the artifact to pick it up";
+        yield return new WaitForSeconds(2);
+        beginText.GetComponent<Text>().text = "";
         
     }
 
@@ -65,9 +81,12 @@ public class ScoringSystem : MonoBehaviour
         }
         else if (hasCollected)
         {
-            Destroy(gameObject);
-            scoreText.GetComponent<Text>().text = theScore + "/10";
+            collectedTextAnim.Play();
             finishLine.gameObject.SetActive(true);
+            scoreText.GetComponent<Text>().text = theScore + "/10";
+            collectedText.GetComponent<Text>().text = "Go to the top of the pyramid";
+            collectedTextAnim.Play();
+            Destroy(gameObject);
         }
     }
 
@@ -77,5 +96,19 @@ public class ScoringSystem : MonoBehaviour
         {
             hasCollected = true;
         }
+
+        if (theScore > 9)
+        {
+            /*
+            collectedTextAnim.Play();
+            finishLine.gameObject.SetActive(true);*/
+        }
+        else
+        {
+            collectedText.GetComponent<Text>().text = "";
+        }
     }
+
+    #endregion
+    
 }

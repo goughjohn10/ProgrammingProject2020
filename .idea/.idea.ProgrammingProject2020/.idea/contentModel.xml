@@ -53,6 +53,7 @@
           <e p="IntroDirector.cs" t="Include" />
           <e p="mouseLook.cs" t="Include" />
           <e p="Music.cs" t="Include" />
+          <e p="PauseScreenManager.cs" t="Include" />
           <e p="PlayerManager.cs" t="Include" />
           <e p="playerMovement.cs" t="Include" />
           <e p="PyramidFractal.cs" t="Include" />

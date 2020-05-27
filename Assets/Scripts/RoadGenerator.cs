@@ -10,9 +10,8 @@ public class RoadGenerator : MonoBehaviour
     public Vector3 rightOriginalOffset;
     public Vector3 leftOriginalOffset;
     public Vector3 offset;
-    
     public GameObject tree;
-    // Start is called before the first frame update
+    
     void Start()
     {
         GrowTrees(leftOriginalOffset);

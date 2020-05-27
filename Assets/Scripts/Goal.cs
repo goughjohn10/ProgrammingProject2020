@@ -6,17 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class Goal : MonoBehaviour
 {
-    
-    private void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Player") && ScoringSystem.hasCollected)
         {
             EndGame();
+            ScoringSystem.hasCollected = false;
         }
     }
 

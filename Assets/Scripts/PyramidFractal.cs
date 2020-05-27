@@ -5,21 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class PyramidFractal : MonoBehaviour
 {
+    #region Fields
+
     public Mesh mesh;
-
     public Material material;
-
     public int maxDepth;
-
     private int depth;
-
     public float newScale;
-
     public GameObject topMount;
-
     public static bool leftScene;
+
+    #endregion
+
+    #region Methods
     
-    // Start is called before the first frame update
     void Start()
     {
         gameObject.AddComponent<MeshFilter>().mesh = mesh;
@@ -70,18 +69,16 @@ public class PyramidFractal : MonoBehaviour
         }
         this.gameObject.layer = (8); //layer 8 is the ground
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     IEnumerator ExplodeAndLeave()
     {
         yield return new WaitForSeconds(0.2f);
         Time.timeScale = 1;
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("WinScreen");
-    }
+    } //For cut scene explosion
+
+    #endregion
+    
+ 
 }

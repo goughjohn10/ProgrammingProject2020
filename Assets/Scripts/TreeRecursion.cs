@@ -22,10 +22,6 @@ public class TreeRecursion : MonoBehaviour
                 leavesStart = copy.transform.position;
                 Instantiate(leaves, leavesStart, Quaternion.identity);
             }
-            /*else if (recurse == 0)
-            {
-                Instantiate(leaves, leavesStart, Quaternion.identity);
-            }*/
         }
     }
 
